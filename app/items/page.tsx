@@ -6,10 +6,11 @@ export default async function ListPage() {
 
   return (
     <div className="flex flex-col gap-2 my-8">
-      {Array.from({ length: 4 }).map((_, i) => (
+      <h1>List page</h1>
+      {Array.from({ length: 12 }).map((_, i) => (
         <Link
           href={`/items/${i}`}
-          className="border-2 border-gray-300 rounded-lg"
+          className="border-2 border-gray-300 rounded-lg px-2 py-1"
         >
           {i}
         </Link>
